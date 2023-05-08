@@ -11,5 +11,6 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
+      nodePort: 38080
   selector:
     {{- include "fullstack-springboot-react.selectorLabels" . | nindent 4 }}
